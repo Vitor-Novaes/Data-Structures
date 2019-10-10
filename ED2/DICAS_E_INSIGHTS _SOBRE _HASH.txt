@@ -1,0 +1,76 @@
+
+- DEFINIÇÕES:
+Hashing = {
+É uma técnica para realizar inserções, deleções e 
+buscas em tempo constante - O(1). 
+}
+Tabela Hashing = {
+É uma técnica para realizar inserções, deleções e 
+buscas em tempo constante - O(1).
+É uma estrutura de dados vetorial de comprimento 
+fixo, contendo chaves. Em geral uma chave é um STRING 
+com um valor associado. 
+}
+TH = {
+É uma estrutura de dados vetorial de comprimento 
+fixo, contendo chaves. Em geral uma chave é um STRING 
+com um valor associado. 
+}
+Função Hash = {
+É uma função que mapeia as chaves da tabela HASH. 
+f : S  [0..TH-1] x(símbolo), onde S é um conjunto qualquer 
+}
+Conceito de COLISÃO = {
+Idealmente chaves distintas ocupam células 
+distintas da tabela hashing. É possível que, apesar disto, a 
+função hashing enderece uma chave a uma célula da tabela, 
+que já está ocupada. Isto é denominado “colisão”. 
+}
+DICAS E DETALHES :
+- Ao escolher o tamanho da TABELA HASH ou TH ou TAM_HASH, o ideal
+é escolher um número primo, evitar valores que sejam uma 
+POTÊNCIA DE 2.  
+
+- Um NÚMERO PRIMO reduz a probabilidade de COLISÕES, mesmo 
+que a função de hashing utilizada não seja muito eficaz.
+
+- Uma potência de 2 melhora a velocidade, mas pode aumentar
+os problemas de COLISÃO se estivermos utilizando uma 
+FUNÇÃO DE HASHING mais simples.
+
+OPEN HASHING OU HASH ABERTA = {
+O tratamento das colisões é realizado logo após a 
+verificação de que na célula (ou slot) da tabela há pelo menos um elemento 
+inserido. 
+}
+FATOR DE CARGA (y(lambda) ): É a quantidade de elementos na 
+maior lista interna criada pela colisão. Quanto maior for
+pior é o desempenho da tabela HASH. Neste caso a tabela 
+deve ser bem grande e a função de distribuição deve ser tal 
+que y(lambda) =~ igual a aproximadamente 1.
+Vantagens = {
+Inserção – O(1)
+Aceita elementos repetidos (Não é uma estrutura de busca) 
+}
+Desvantagens = {
+    Busca e Deleção O(n)
+}
+Open addressing vs. chaining
+------------------------------Chaining------------------||-------------Open addressing
+Collision resolution ->	Using external data structure   ||  	Using hash table itself
+Memory waste ->	Pointer size overhead per entry (storing list heads in the table)  ||	No overhead 1
+Performance dependence on table's load factor ->	Directly proportional	|| Proportional to (loadFactor) / (1 - loadFactor)
+Allow to store more items, than hash table size	-> Yes    ||	No. Moreover, it's recommended to keep table's load factor below 0.7
+Hash function requirements ->	Uniform distribution  ||  Uniform distribution, should avoid clustering
+Handle removals	 -> Removals  are ok	 ||    Removals clog the hash table with "DELETED" entries
+Implementation	-> Simple   ||   Correct implementation of open addressing based hash table is quite tricky
+
+
+CLOSED HASHING OU HASH FECHADA
+
+HASHING MEIO-ABERTA  lambda HMA - Hashing elaborada pelo professor
+
+
+
+
+
