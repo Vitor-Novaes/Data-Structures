@@ -1,0 +1,28 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    benchmark-ips (2.7.2)
+    benchmark-memory (0.1.2)
+      memory_profiler (~> 0.9)
+    fileutils (1.2.0)
+    gruff (0.7.0)
+      rmagick (~> 2.13, >= 2.13.4)
+    memory_profiler (0.9.14)
+    minitest (5.11.3)
+    rmagick (2.16.0)
+    stop_watch (1.0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  benchmark-ips
+  benchmark-memory
+  fileutils
+  gruff
+  minitest
+  rmagick (~> 2.15, >= 2.15.4)
+  stop_watch
+
+BUNDLED WITH
+   1.17.3
