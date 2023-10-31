@@ -5,11 +5,15 @@ GEM
     benchmark-memory (0.1.2)
       memory_profiler (~> 0.9)
     fileutils (1.2.0)
-    gruff (0.7.0)
-      rmagick (~> 2.13, >= 2.13.4)
+    gruff (0.23.0)
+      histogram
+      rmagick (>= 5.3)
+    histogram (0.2.4.1)
     memory_profiler (0.9.14)
     minitest (5.11.3)
-    rmagick (2.16.0)
+    pkg-config (1.5.5)
+    rmagick (5.3.0)
+      pkg-config (~> 1.4)
     stop_watch (1.0.0)
 
 PLATFORMS
@@ -21,7 +25,7 @@ DEPENDENCIES
   fileutils
   gruff
   minitest
-  rmagick (~> 2.15, >= 2.15.4)
+  rmagick (~> 5.3)
   stop_watch
 
 BUNDLED WITH
