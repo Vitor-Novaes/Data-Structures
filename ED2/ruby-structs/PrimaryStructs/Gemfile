@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # Generate Graphs
-gem 'rmagick', '~> 2.15', '>= 2.15.4'
+gem 'rmagick', '~> 5.3'
 gem 'gruff'
 gem 'stop_watch'
 gem 'minitest'
